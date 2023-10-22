@@ -1,16 +1,15 @@
 #include<iostream>
 using namespace std;
-// A 
-// B C
-// C D E
-// D E F G
+// D 
+// C D
+// B C D
+// A B C D
 
 int main(){
     int i=1, n=4;
     
-    
     while(i<=n){
-        char ch ='A'+i-1;
+        char ch ='A'+n-i;
         int j =1;
         while(j<=i){
             cout<<ch<<" ";
