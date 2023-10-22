@@ -1,17 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// 1 2 3 4 
-// 1 2 3 4
-// 1 2 3 4
-// 1 2 3 4
+// ABC
+// DEF
+// GHI
 
 int main() {
-    int i=1, n = 4;
+    int i=1, n = 3;
+    char ch ='A';
+  
     while(i<=n){
         int j=1;
         while(j<=n){
-        cout<<j<<" ";
+        cout<<ch;
+        ch++;
         j++;
         }
         cout<<endl;

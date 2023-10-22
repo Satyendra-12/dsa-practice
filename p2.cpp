@@ -1,18 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// 1 2 3 4 
-// 1 2 3 4
-// 1 2 3 4
-// 1 2 3 4
+// 4 3 2 1 
+// 4 3 2 1
+// 4 3 2 1
+// 4 3 2 1
 
 int main() {
     int i=1, n = 4;
     while(i<=n){
-        int j=1;
-        while(j<=n){
+        int j=n;
+        while(j>=1){
         cout<<j<<" ";
-        j++;
+        j--;
         }
         cout<<endl;
         i++;
