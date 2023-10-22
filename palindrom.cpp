@@ -1,29 +1,30 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
 
-// string isPalindrom(string s){
-//     string p =s;
-//     reverse(p.begin(), p.end());
+bool isPalindrome(string str) {
+    int left = 0;
+    int right = str.length() - 1;
 
-//     if(p==s){
-//         return "yes";
-//     }
-//     else{
-//         return "no";
-//     }
-// }
-
-string isPalindrom(string s){
-    for(int i =0 ; i<s.length()/2; i++){
-        if(s[i] != s[s.length()-i-1]){
-            return "no";
+    while (left < right) {
+        if (str[left] != str[right]) {
+            return false;  // Not a palindrome
         }
+        left++;
+        right--;
     }
-    return "yes";
+
+    return true;  // It's a palindrome
 }
 
-int main(){
-    string s = "abdcba";
-    cout<<isPalindrom(s);
+int main() {
+    string input = "abcba";
+
+    if (isPalindrome(input)) {
+        cout << "The string is a palindrome." << endl;
+    } else {
+        cout << "The string is not a palindrome." << endl;
+    }
+
     return 0;
 }

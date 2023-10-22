@@ -23,7 +23,7 @@ void print(int arr[], int n) {
 
 int main() {
     int arr[] = {3, 2, 6, 4, 5, 1};
-    int n = sizeof(arr) / sizeof(arr[0);
+    int n = sizeof(arr) / sizeof(arr[0]);
     insertion_sort(arr, n);
     print(arr, n);
     return 0;
